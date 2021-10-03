@@ -6,12 +6,14 @@ export default {
   title: 'Warning'
 }
 
+/** шаблон сториса (обертка, делай везде просто как тут) */
 const Template = (args) => (
   <div>
-  <Warning
-    {...args}
-  />
+    <Warning
+      {...args}
+    />
   </div>
 )
 
+/** экспорт, чтобы сделать сторис */
 export const Default = Template.bind({})
