@@ -1,13 +1,14 @@
-// packages
 import React from 'react'
 
-/** $END$ */
-const Warning: React.FC = () => {
+export interface IWarning {
+  title?: string
+}
+
+/** компонент - предупреждение */
+const Warning:React.FC<IWarning> = ({ title }: IWarning) => {
   return (
-    <div className='text-16 text-white p-24 rounded inline-block bg-red'>
-      dsfnsdf
-    </div>
+    <div>{title}</div>
   )
 }
 
-export default React.memo(Warning)
+export default Warning
