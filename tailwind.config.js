@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     colors: {
       black40a: 'rgba(0, 0, 0, 0.4)',
+      brown: '#5b362e',
+      yellow: '#ffee02',
       grayLight: '#ababab',
       gray: '#4F4F4F',
       red: '#FC0000',
@@ -34,7 +36,10 @@ module.exports = {
       screen: '100vw',
       full: '100%',
       '1/3': '33.33%',
-      '2/3': '66.66%'
+      '2/3': '66.66%',
+      48: '4.8rem',
+      32: '3.2rem',
+      24: '2.4rem'
     },
     height: {
       1: '1px',
@@ -55,7 +60,9 @@ module.exports = {
       120: '12rem',
       80: '8rem',
       64: '6.4rem',
+      56: '5.6rem',
       32: '3.2rem',
+      48: '4.8rem',
       24: '2.4rem'
     },
     flex: {
@@ -78,6 +85,7 @@ module.exports = {
       1: '1px'
     },
     fontSize: {
+      12: '1.2rem',
       14: '1.4rem',
       16: '1.6rem',
       18: '1.8rem',

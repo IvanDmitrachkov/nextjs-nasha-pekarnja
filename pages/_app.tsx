@@ -6,6 +6,8 @@ import { AppProps } from 'next/app'
 // styles
 import 'styles/roboto/stylesheet.css'
 import 'styles/global.css'
+// components
+import Header from 'components/Header/Header'
 
 function MyApp ({ Component, pageProps }: AppProps) {
   const [queryClient] = useState(() => new QueryClient())
@@ -13,6 +15,7 @@ function MyApp ({ Component, pageProps }: AppProps) {
   return (
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
+        <Header />
         <Component {...pageProps} />
       </Hydrate>
     </QueryClientProvider>
