@@ -1,1 +1,0 @@
-const name = 'Ivan Dmitrachkov'

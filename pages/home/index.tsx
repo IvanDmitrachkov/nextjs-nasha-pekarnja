@@ -2,7 +2,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   return (
     <div className='pb-100'>
       <Head>
