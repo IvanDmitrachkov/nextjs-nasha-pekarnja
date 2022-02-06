@@ -98,7 +98,8 @@ module.exports = {
     },
     borderRadius: {
       DEFAULT: '.4rem',
-      16: '1.6rem'
+      16: '1.6rem',
+      full: '9999px'
     },
     fontSize: {
       12: '1.2rem',
