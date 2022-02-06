@@ -2,7 +2,7 @@
 import React from 'react'
 import BgImage from 'components/BgImage/BgImage'
 import cn from 'classnames'
-import { MdArrowForward } from 'react-icons/all'
+import { IconArrowForward } from 'icons'
 import Link from 'next/link'
 import Warning from 'components/Warning/Warning'
 import css from './cardProduct.module.css'
@@ -45,7 +45,7 @@ const CardProduct: React.FC<ICardProduct> = ({
             {discountPrice && <span className='text-24 font-bold text-brown'>{discountPrice} руб.</span>}
             {oldPrice && <span className='text-18 pl-24 line-through text-gray'>{oldPrice} руб.</span>}
           </div>
-          <MdArrowForward className={cn('absolute right-0 bottom-0 text-32 text-brown mr-24 mb-16 opacity-0', css.arrow)} />
+          <IconArrowForward className={cn('absolute right-0 bottom-0 text-32 text-brown mr-24 mb-16 opacity-0', css.arrow)} />
         </div>
       </a>
     </Link>

@@ -24,6 +24,7 @@
         "no-use-before-define": [0],
         "@typescript-eslint/no-use-before-define": [1],
         "no-redeclare": "off",
+        "camelcase": "off",
         "@typescript-eslint/no-redeclare": ["error"],
         "react/jsx-closing-bracket-location": "error",
         "react/jsx-closing-tag-location": "error"

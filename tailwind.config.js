@@ -3,14 +3,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
-      black40a: 'rgba(0, 0, 0, 0.4)',
       brown: '#5b362e',
       yellow: '#ffee02',
-      grayLight: '#ababab',
-      gray: '#4F4F4F',
       red: '#FC0000',
       blackSolid: '#000',
+      black40a: 'rgba(0, 0, 0, 0.4)',
       black: '#333333',
+      gray: '#4F4F4F',
+      grayLight: '#ababab',
+      fog: '#e5e5e5',
       white: '#FFFFFF'
     },
     spacing: {
