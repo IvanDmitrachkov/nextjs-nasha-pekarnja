@@ -28,7 +28,9 @@ module.exports = {
       32: '3.2rem',
       24: '2.4rem',
       16: '1.6rem',
+      12: '1.2rem',
       8: '.8rem',
+      4: '.4rem',
       0: '0'
     },
     width: {
@@ -58,7 +60,9 @@ module.exports = {
       400: '40rem',
       360: '36rem',
       300: '30rem',
+      240: '24rem',
       200: '20rem',
+      140: '14rem',
       120: '12rem',
       80: '8rem',
       64: '6.4rem',
@@ -90,6 +94,10 @@ module.exports = {
     borderWidth: {
       0: '0',
       1: '1px'
+    },
+    borderRadius: {
+      DEFAULT: '.4rem',
+      16: '1.6rem'
     },
     fontSize: {
       12: '1.2rem',

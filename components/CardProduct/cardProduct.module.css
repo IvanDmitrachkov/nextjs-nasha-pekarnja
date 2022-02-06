@@ -1,0 +1,13 @@
+.arrow {
+  transition: opacity 100ms ease-in-out;
+}
+
+.card {
+  @apply bg-white block;
+
+  &:hover {
+    .arrow {
+      opacity: 1!important;
+    }
+  }
+}
