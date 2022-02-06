@@ -2,6 +2,7 @@
 import React from 'react'
 import cn from 'classnames'
 import BgImage from 'components/BgImage/BgImage'
+import MarkDown from 'components/MarkDown/MarkDown'
 
 export interface IBanner {
   image?: string
@@ -13,10 +14,13 @@ export interface IBanner {
 /** баннер */
 const Banner: React.FC<IBanner> = ({ text, title, className, image }: IBanner) => {
   return (
-    <div className={cn('bg-brown h-600 relative flex flex-col justify-end', className)}>
+    <div className={cn('bg-brown h-600 relative flex flex-col justify-end sm:h-screen', className)}>
       <div className='wrapper relative z-10 pb-80 min-h-2/3'>
-        <h2 className='text-white text-72 font-bold mb-24'>{title}</h2>
-        <p className='text-white text-24'>{text}</p>
+        <div className='lg:w-2/3'>
+        <h2 className='text-white text-72 font-bold mb-24 sm:text-48'>{title}</h2>
+        {text &&
+          <MarkDown className="text-white text-24">{text}</MarkDown>}
+        </div>
       </div>
       {image &&
         <BgImage
