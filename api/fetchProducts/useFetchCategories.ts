@@ -1,8 +1,12 @@
+// packages
 import { useQuery, UseQueryResult } from 'react-query'
+// api
 import { axiosInstance } from 'api/axiosInstance'
-import { TypeCategoriesApi, TypeProductApi } from 'api/fetchProducts/types'
-import { ICardProduct } from 'components/CardProduct/CardProduct'
+// utils
 import getImagePath from 'utils/getImagePath'
+// types
+import { ICardProduct } from 'components/CardProduct/CardProduct'
+import { TypeCategoriesApi, TypeProductApi } from 'api/fetchProducts/types'
 
 interface ICategory {
   title: string,

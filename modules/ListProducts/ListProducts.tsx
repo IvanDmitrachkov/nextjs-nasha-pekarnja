@@ -1,6 +1,8 @@
 // packages
 import React from 'react'
+// hooks
 import useFetchCategories from 'api/fetchProducts/useFetchCategories'
+// components
 import CardProduct from 'components/CardProduct/CardProduct'
 // styles
 import styles from './stylesListProducts'
@@ -14,9 +16,9 @@ const ListProducts: React.FC = () => {
       {data?.map((category, key) => (
         <div className='mb-64' key={key}>
           <h2 className={styles.title}>{category.title}</h2>
-          <ul className='flex flex-wrap -mx-gutter'>
+          <ul className={styles.cardsWrapper}>
             {category.products?.map((item, key) => (
-              <li key={key} className='w-1/3 p-gutter sm:w-full'>
+              <li key={key} className={styles.card}>
                 <CardProduct {...item} />
               </li>
             ))}
